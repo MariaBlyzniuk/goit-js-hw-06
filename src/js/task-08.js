@@ -17,8 +17,8 @@ formEl.addEventListener('submit', onFormSubmit);
 
 
 let user = {
-    email: inputEmail,
-    password: inputPass,
+    email: '',
+    password: '',
 };
     
 function onFormSubmit(event) {

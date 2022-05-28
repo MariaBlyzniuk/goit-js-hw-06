@@ -14,7 +14,6 @@ const ingredients = [
   'Condiments',
 ];
 
-
 const list = document.querySelector('ul');
 for (const ingredient of ingredients) {
   const ingredientsEl = document.createElement('li');
