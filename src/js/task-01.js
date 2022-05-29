@@ -5,16 +5,6 @@
 const itemEl = document.querySelectorAll('.item');
 console.log(`Number of categories: ${itemEl.length}` );
 
-
-// Category: Animals
-// Elements: 4
-
-// Category: Products
-// Elements: 3
-
-// Category: Technologies
-// Elements: 5
-
 for (const item of itemEl) {
     console.log(`Category: ${item.firstElementChild.textContent}`);
     const countItems = item.querySelectorAll('li');
