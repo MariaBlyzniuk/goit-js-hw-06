@@ -23,24 +23,15 @@ let user = {
     
 function onFormSubmit(event) {
     event.preventDefault();
-
-    const formElements = event.currentTarget.elements;
-    console.log(formElements);
-
-    const formData = new FormData(event.currentTarget);
-    console.log(formData);
-
+const {
+    elements: { email, password }
+  } = event.currentTarget;
     
-        if (!inputEmail || !inputPass) {
-        alert('все поля должны быть заполнены');
-    } else if(inputEmail || inputPass){
-        user.email = inputEmail;
-        user.password = inputPass;
-            console.log(Object.values(user));
-            
-        }
-        formEl.reset();
-    
+        if (email.value === '' || password.value ==='') {
+        return alert('все поля должны быть заполнены');
+    } 
+     console.log(`Login: ${email.value}, Password: ${password.value}`);
+  event.currentTarget.reset();
 
 };
 
