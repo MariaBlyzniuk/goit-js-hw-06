@@ -12,5 +12,8 @@ function onInputChange(event) {
     inputEl = event.currentTarget.value;
     // console.log(event.currentTarget.value);
     
-    inputEl !== ' ' ? (outputEl.textContent = inputEl.trim()) : "Anonymous";
+    inputEl.trim() === ""
+    ? outputEl.textContent = "Anonymous"
+    : outputEl.textContent = inputEl;
+
 };

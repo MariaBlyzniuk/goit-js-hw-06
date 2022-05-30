@@ -18,6 +18,6 @@ for (const ingredient of ingredients) {
   const ingredientsEl = document.createElement('li');
   ingredientsEl.textContent = [ingredient];
   ingredientsEl.classList.add('item');
-  list.append(ingredientsEl);
+  list.appendChild(ingredientsEl);
 }
 console.log(list);
